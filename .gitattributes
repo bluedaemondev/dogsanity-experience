@@ -1,0 +1,5 @@
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.bc filter=lfs diff=lfs merge=lfs -text
+F:/Unity[[:space:]]2020/Ludum[[:space:]]dare[[:space:]]46/dogsanity-experience/The[[:space:]]Dogsanity[[:space:]]Abusive[[:space:]]Experience/Assets/Sound[[:space:]]Effects/UnitySetup-WebGL-Support-for-Editor-2019.3.7f1.exe filter=lfs diff=lfs merge=lfs -text
+The[[:space:]]Dogsanity[[:space:]]Abusive[[:space:]]Experience/Assets/Sound[[:space:]]Effects/UnitySetup-WebGL-Support-for-Editor-2019.3.7f1.exe filter=lfs diff=lfs merge=lfs -text
