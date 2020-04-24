@@ -30,7 +30,7 @@ public class foodbagsController : MonoBehaviour
     }
     public void RemoveBag()
     {
-        bags[Mathf.Clamp(currIdx, 0, bags.Length)].SetActive(false);
+        bags[Mathf.Clamp(currIdx-1, 0, bags.Length)].SetActive(false);
         if (currIdx - 1 >= 0)
         {
             currIdx--;

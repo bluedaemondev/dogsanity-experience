@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour
 
     public event Action onWork; //aumenta los stats y hace pasar 6 horas
 
-    public event Action<float> onBuyShit;
+    public event Action<float> onBuyShit; // buy furniture
 
 
     // Start is called before the first frame update
@@ -71,6 +71,12 @@ public class GameController : MonoBehaviour
             }
             else if (GameObject.FindObjectOfType<kidController>().health >= 100)
                 jeringaCanvas.SetActive(false);
+            
+            if(hoursCurrent % 24 == 0)
+            {
+                FinalizeDay(Convert.ToInt32(hoursCurrent / 24));
+            }
+
         }
     }
 
@@ -127,9 +133,10 @@ public class GameController : MonoBehaviour
     }
     public bool BuyJeringa()
     {
-        if (cash >= 50 && GameObject.FindObjectOfType<kidController>().health + 25 <= 220)
+        if (cash >= 50 )
         {
-            GameObject.FindObjectOfType<kidController>().health += 25;
+            //220 max life ( deberia ser editable / mejorable ?
+            GameObject.FindObjectOfType<kidController>().health = Mathf.Clamp(GameObject.FindObjectOfType<kidController>().health + 25, 0, 220);
             cash -= 50;
             CanvasController.current.PostJeringaNotification();
             return true;
@@ -145,7 +152,12 @@ public class GameController : MonoBehaviour
         if (onDayEnd != null)
         {
             onDayEnd(idx);
+            
         }
+
+        print("passing day " + idx);
+        SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings-1); //GetSceneByName("DayEndB").buildIndex);
+
     }
     public void Feed()
     {
@@ -158,8 +170,9 @@ public class GameController : MonoBehaviour
             print("no tenes comida");
         }
 
-        else if (GameObject.FindObjectOfType<dogController>().hunger <= 90)
+        else if (foodBag >= 120)//GameObject.FindObjectOfType<dogController>().hunger <= 90)
         {
+            //GameObject.FindObjectOfType<dogController>().hunger = Mathf.Clamp(GameObject.FindObjectOfType<dogController>().hunger, 0, 220);
             foodBag -= 120;
             GameObject.FindObjectOfType<foodbagsController>().RemoveBag();
             this.sound.clip = soundFeed;
@@ -198,8 +211,8 @@ public class GameController : MonoBehaviour
 
     public void Pet()
     {
-        if (GameObject.FindObjectOfType<dogController>().happyness >= 10000)
-            GameController.current.Ending("clicker");
+        //if (GameObject.FindObjectOfType<dogController>().happyness >= 10000)
+        //    GameController.current.Ending("clicker ");
         if (onPet != null)
         {
             onPet();

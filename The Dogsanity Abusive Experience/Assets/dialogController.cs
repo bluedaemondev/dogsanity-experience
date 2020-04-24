@@ -17,6 +17,18 @@ public class dialogController : MonoBehaviour
 
     public event Action onQueueAdd;
 
+    public kidController kid;
+    public adultController adult;
+
+
+
+    private void Start()
+    {
+        //tengo que cambiar esto para que los controladores de los avatares solo contengan los strings.
+        //esta clase se tiene que ocupar de todo el sistema para evitar trabar el desarrollo.
+        //a implementar 26/4/20
+    }
+
     public void DialogStep()
     {
         if (onQueueAdd != null)

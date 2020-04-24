@@ -133,7 +133,8 @@ public class dogController : MonoBehaviour
     {
         this.happyness += this.happynesPerClick;
         print("asdasd uwu");
-        Instantiate(gsPrefab, transform, true);
+        GameObject statUp = Instantiate(gsPrefab, transform, true);
+        statUp.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
     private void Eat()
     {

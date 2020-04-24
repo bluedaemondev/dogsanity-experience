@@ -16,11 +16,11 @@ public class fillFoodComponent : MonoBehaviour
     }
     void CalculateSprite()
     {
-        if (GameController.current.food > 50)
+        if (GameController.current.foodBag >= 120)
         {
             this.GetComponent<SpriteRenderer>().sprite = sprites[0];
         }
-        else if (GameController.current.food > 0)
+        else if (GameController.current.foodBag > 0)
         {
             this.GetComponent<SpriteRenderer>().sprite = sprites[1];
 

@@ -137,7 +137,7 @@ public class adultController : MonoBehaviour
         }
         else
         {
-            this.spriteRenderer.sprite = stateSprites[2];
+            this.spriteRenderer.sprite = stateSprites[3];
             print("Terminar juego final Ultra happy dog");
             //aca ya no come mas y se dispara la historia
             //evento en game controller

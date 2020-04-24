@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0148C133-1DED-42FF-94C3-1B2D92DCA99B}</ProjectGuid>
+    <ProjectGuid>{41CA01E6-CEC5-4BF7-A1DC-7E7E1EC7A3DD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.Animation.Samples.Editor</AssemblyName>
@@ -66,22 +66,22 @@
     <Compile Include="Assets\Samples\2D Animation\3.1.1\Samples\5 SpriteSwap\Scripts\Editor\BuildAssetBundle.cs" />
     <None Include="Assets\Samples\2D Animation\3.1.1\Samples\5 SpriteSwap\Scripts\Editor\Unity.2D.Animation.Samples.Editor.asmdef" />
     <Reference Include="UnityEditor.UI">
-      <HintPath>F:/Unity 2020/Ludum dare 46/Ludum Dare 4/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>F:/Unity 2020/Ludum dare 46/dogsanity-experience/The Dogsanity Abusive Experience/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>F:/Unity 2020/Ludum dare 46/Ludum Dare 4/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>F:/Unity 2020/Ludum dare 46/dogsanity-experience/The Dogsanity Abusive Experience/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>F:/Unity 2020/Ludum dare 46/Ludum Dare 4/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+      <HintPath>F:/Unity 2020/Ludum dare 46/dogsanity-experience/The Dogsanity Abusive Experience/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>F:/Unity 2020/Ludum dare 46/Ludum Dare 4/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+      <HintPath>F:/Unity 2020/Ludum dare 46/dogsanity-experience/The Dogsanity Abusive Experience/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>F:/Unity 2020/Ludum dare 46/Ludum Dare 4/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>F:/Unity 2020/Ludum dare 46/dogsanity-experience/The Dogsanity Abusive Experience/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>F:/Unity 2020/Ludum dare 46/Ludum Dare 4/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>F:/Unity 2020/Ludum dare 46/dogsanity-experience/The Dogsanity Abusive Experience/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -279,7 +279,7 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>F:/Unity 2020/Ludum dare 46/Ludum Dare 4/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>F:/Unity 2020/Ludum dare 46/dogsanity-experience/The Dogsanity Abusive Experience/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -638,7 +638,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.2D.Animation.Samples.Runtime.csproj">
-      <Project>{B2186540-A826-7B37-34B3-9B8C55363136}</Project>
+      <Project>{C0F7729A-9A35-4240-D136-BD2F234B39B4}</Project>
       <Name>Unity.2D.Animation.Samples.Runtime</Name>
     </ProjectReference>
   </ItemGroup>

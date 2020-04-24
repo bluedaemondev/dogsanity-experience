@@ -924,7 +924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9622642, g: 0.9123354, b: 0.9123354, a: 1}
+  m_Color: {r: 0.8867924, g: 0.8867924, b: 0.8867924, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2368,7 +2368,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2775,8 +2775,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00012207031, y: 94.99994}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 172.90004, y: 94.99994}
+  m_SizeDelta: {x: 545.8, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &602736341
 MonoBehaviour:
@@ -2796,7 +2796,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Are you letting him die?
+  m_text: Little Bobby Jr. is sick!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2841,7 +2841,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 20
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -2862,10 +2862,10 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -320.72144, w: -42.560246}
+  m_margin: {x: 0, y: 0, z: 1.2921423, w: -1.2121803}
   m_textInfo:
     textComponent: {fileID: 602736341}
-    characterCount: 24
+    characterCount: 25
     spriteCount: 0
     spaceCount: 4
     wordCount: 5
@@ -3584,8 +3584,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -10.4, y: 38.4}
+  m_SizeDelta: {x: -104.56, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &838006369
 MonoBehaviour:
@@ -3673,7 +3673,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 68.763756, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 838006369}
     characterCount: 14
@@ -4646,6 +4646,8 @@ MonoBehaviour:
   delayTyping: 0.1
   audioSrcObject: {fileID: 2068316298}
   voice: {fileID: 0}
+  kid: {fileID: 0}
+  adult: {fileID: 0}
 --- !u!4 &968401435
 Transform:
   m_ObjectHideFlags: 0
@@ -5407,8 +5409,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 1.0699997, y: 1.0999985}
+  m_SizeDelta: {x: 3.57, y: -0.24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1136010870
 MonoBehaviour:
@@ -5494,7 +5496,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 19.232607, w: 0}
   m_textInfo:
     textComponent: {fileID: 1136010870}
     characterCount: 3
@@ -5707,7 +5709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.82622427, g: 0.65913135, b: 0.8679245, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6090,7 +6092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.96346676, b: 0.8820755, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7368,8 +7370,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.5, y: 8.5}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 1.0999985, y: 6.049999}
+  m_SizeDelta: {x: 1.61, y: -8.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1824230575
 MonoBehaviour:
@@ -7884,7 +7886,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.7514816, g: 0.8679245, b: 0.68369526, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -7988,8 +7990,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -0.00012207031, y: -0.000022888184}
+  m_SizeDelta: {x: 0, y: 0.000015259}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1963319381
 MonoBehaviour:

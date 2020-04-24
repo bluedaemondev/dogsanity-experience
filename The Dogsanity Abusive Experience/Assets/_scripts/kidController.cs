@@ -61,15 +61,15 @@ public class kidController : MonoBehaviour
 
     private void Pet()
     {
-        this.happyness += this.happynesPerClick;
-        print("el pibe e feliz!");
+        //this.happyness += this.happynesPerClick;
+        //print("el pibe e feliz!");
         //Instantiate(gsPrefab, transform, true);
     }
 
     private void GainHappyness()
     {
         this.happyness += this.happynesPerClick;
-        print("el pibe e feliz!");
+        //print("el pibe e feliz!");
 
         //Instantiate(gsPrefab, transform, true);
     }
@@ -77,7 +77,7 @@ public class kidController : MonoBehaviour
     private void LoseHappyness()
     {
         this.happyness -= this.happynessLostPerHour;
-        print("el pibe e feliz!");
+        //print("el pibe e feliz!");
 
         //Instantiate(gsPrefab, transform, true);
     }
@@ -99,7 +99,7 @@ public class kidController : MonoBehaviour
 
     void UpdateStateHappyness()
     {
-        if (happyness <= -100 || health <= 1)
+        if (health <= 5)
         {
             this.spriteRenderer.sprite = stateSprites[0];
             print("Terminar juego final kid is ded");
@@ -137,19 +137,21 @@ public class kidController : MonoBehaviour
         this.spriteRenderer = this.GetComponent<UnityEngine.UI.Image>();
         this.dialogCo = GameObject.FindObjectOfType<dialogController>();
 
-        GameController.current.onPet += Pet;
+        //GameController.current.onPet += Pet; //duplicated method
+        //GameController.current.onPassHour += CheckForDeath; //duplicated method
+
         GameController.current.onPet += GainHappyness;
         GameController.current.onPet += UpdateStateHappyness;
 
 
         GameController.current.onPassHour += LoseHealth;
         GameController.current.onPassHour += LoseHappyness;
-        GameController.current.onPassHour += CheckForDeath;
         GameController.current.onPassHour += UpdateStateHappyness;
 
+
+        //a migrar 
         GameController.current.onWork += Show_Random_Dialog;
         GameController.current.onFeed += Show_PostFeed_Dialog;
-
         CanvasController.current.onNoMoney += Show_NoCash_Dialog;
         CanvasController.current.onPostFeed += Show_PostFeed_Dialog;
         CanvasController.current.onPostFeed += Show_PostPurchase_Dialog;
